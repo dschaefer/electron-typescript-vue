@@ -1,0 +1,27 @@
+{
+  "name": "wp-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "build:main": "webpack --config webpack.main.config.js",
+    "build:app": "webpack --config webpack.app.config.js",
+    "build": "npm run build:main && npm run build:app",
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.6.10",
+    "ts-loader": "^2.1.0",
+    "typescript": "^2.3.4",
+    "vue-loader": "^12.2.1",
+    "vue-property-decorator": "^5.1.0",
+    "vue-template-compiler": "^2.3.4",
+    "webpack": "^2.6.1"
+  },
+  "dependencies": {
+    "vue": "^2.3.4"
+  }
+}
