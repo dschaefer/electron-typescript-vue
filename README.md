@@ -11,3 +11,6 @@ for the renderer.
 
 TODO: Add in testing using Mocha/Chai including Unit and e2e.
 Still figuring out what the right approach is for these in the Electron context.
+
+TODO: Also lots of Vue.js examples show off webpack's hot reload capability.
+Need to see what makes sense with Electron.
