@@ -12,5 +12,6 @@ module.exports = {
             { test: /\.vue$/, loader: 'vue-loader', options: { esModule: true } },
             { test: /\.ts$/, loader: 'ts-loader', options: { appendTsSuffixTo: [ /\.vue$/ ] } }
         ]
-    }
+    },
+    devtool: '#source-map'
 }

@@ -5,11 +5,13 @@ module.exports = {
         filename: 'dist/main.js'
     },
     resolve: {
-        extensions: [ '.ts', '.js']
+        extensions: [ '.ts', '.js', '.json' ]
     },
     module: {
         loaders: [
-            { test: /\.ts$/, loader: 'ts-loader' }
+            { test: /\.ts$/, loader: 'ts-loader' },
+            { test: /\.json$/, loader: 'json-loader' }
         ]
-    }
+    },
+    devtool: '#source-map'
 }
