@@ -9,8 +9,5 @@ This seed moulds that into an Electron project that uses webpack to translate
 Vue and TypeScript into two JavaScript files, one for the Electron main and one
 for the renderer.
 
-TODO: Add in testing using Mocha/Chai including Unit and e2e.
-Still figuring out what the right approach is for these in the Electron context.
-
 TODO: Also lots of Vue.js examples show off webpack's hot reload capability.
 Need to see what makes sense with Electron.

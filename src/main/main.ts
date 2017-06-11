@@ -18,7 +18,7 @@ function createWindow() {
     })
 
     console.log(app.getAppPath());
-    mainWindow.loadURL(`file://${app.getAppPath()}/index.html`);
+    mainWindow.loadURL(`file://${app.getAppPath()}/dist/index.html`);
 
     mainWindow.on('closed', () => {
         mainWindow = null;

@@ -1,10 +1,10 @@
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    entry: './src/app/renderer.ts',
+    entry: './test/unit/index.js',
     target: 'electron-renderer',
     output: {
-        filename: 'dist/app.js'
+        filename: 'test/out/app.js'
     },
     resolve: {
         extensions: [ '.ts', '.vue', '.js', '.node' ]
@@ -18,6 +18,7 @@ module.exports = {
     },
     plugins: [
         new CopyWebpackPlugin([
+            // {output}/file.txt
             { from: './src/app/index.html', to: 'dist/index.html' }
         ])
     ],
