@@ -6,6 +6,7 @@ describe('App.vue', () => {
     it('sets the correct default data', () => {
         const Ctor = Vue.extend(App);
         const vm = new Ctor().$mount();
-        expect((<any> vm.$data).msg).to.equal(123);
+        const data = <any> vm.$data;
+        expect(data.msg).to.equal(123);
     })
 });
